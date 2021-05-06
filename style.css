@@ -1,56 +1,65 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background: rgb(66,39,90);
-    background: linear-gradient(90deg, rgba(66,39,90,1) 14%, rgba(115,75,109,1) 71%);
-    color:white;
-    font-family: 'poppins', sans-serif;
-    min-height: 100vh;
+body {
+  background: rgb(66, 39, 90);
+  background: linear-gradient(
+    90deg,
+    rgba(66, 39, 90, 1) 14%,
+    rgba(115, 75, 109, 1) 71%
+  );
+  color: white;
+  font-family: "poppins", sans-serif;
+  min-height: 100vh;
 }
-.watch-container{
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-}
-
-h1{
-    font-size: 3.5rem;
-    margin-bottom: 40px;
-}
-.watch-display{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-    margin-bottom: 50px;
-
+.watch-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.buttons{
-    display: flex;
-    justify-content: space-between;
+h1 {
+  font-size: 3.5rem;
+  margin-bottom: 40px;
 }
-.start,
-.stop,
-.reset{
-    border-color: white;
-    border-width: 1px;
-    padding: 0.5rem;
-    color: white;
-    background:transparent;
-    border-radius: 10px;
-    width:7rem;
-    font-size: 1rem;
-    transition: all 0.5s ease;
+#watch-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  margin-bottom: 50px;
 }
-.start:hover,
-.stop:hover,
-.reset:hover{
-    cursor: pointer;
-    transform: scale(1.2);
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+#start,
+#stop,
+#reset {
+  border-color: white;
+  border-width: 1px;
+  padding: 0.5rem;
+  color: white;
+  background: transparent;
+  border-radius: 10px;
+  width: 7rem;
+  font-size: 1rem;
+  transition: all 0.5s ease;
+}
+#start:hover,
+#stop:hover,
+#reset:hover {
+  cursor: pointer;
+  /* transform: scale(1.2); */
+}
+
+#start:focus,
+#stop:focus,
+#reset:focus {
+  outline: none !important;
 }
